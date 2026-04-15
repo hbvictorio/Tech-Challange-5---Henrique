@@ -10,14 +10,14 @@ A aplicação interativa desenvolvida para a equipe pedagógica da Passos Mágic
 ---
 
 ## 🎯 Objetivo do Projeto
-O objetivo deste projeto é analisar a base de dados do PEDE (Pesquisa Extensiva do Desenvolvimento Educacional) referente aos anos de 2020, 2021 e 2022, extrair insights acionáveis e desenvolver um modelo preditivo para identificar alunos em risco de defasagem educacional.
+O objetivo deste projeto é analisar a base de dados do PEDE (Pesquisa Extensiva do Desenvolvimento Educacional) referente aos anos de 2020 a 2024, extrair insights acionáveis e desenvolver um modelo preditivo para identificar alunos em risco de defasagem educacional.
 
 ## 📁 Estrutura do Repositório (Bloco 1)
 
 ```text
 datathon_passos/
 ├── data/                   # Datasets originais e processados
-│   └── dataset_limpo_long.csv  # Dados longitudinais limpos
+│   └── dataset_completo_2020_2024.csv  # Dados longitudinais limpos
 ├── notebooks/              # Scripts de análise e modelagem
 │   ├── 01_eda_limpeza.py       # Limpeza e Análise Exploratória (EDA)
 │   └── 02_modelo_preditivo.py  # Feature Engineering e Modelagem (Forecasting)
@@ -46,7 +46,7 @@ datathon_passos/
 
 ## 📊 Análise Exploratória (Bloco 2)
 A análise exploratória respondeu a 10 perguntas cruciais sobre o desenvolvimento dos alunos:
-1. **Defasagem (IAN):** Queda de 13.6% no IAN médio entre 2020 e 2022.
+1. **Defasagem (IAN):** Queda de 13.6% no IAN médio entre 2020 e 2024.
 2. **Desempenho (IDA):** Queda acentuada em 2021 (pandemia), com recuperação parcial em 2022.
 3. **Engajamento (IEG):** Forte correlação com desempenho e ponto de virada. É o motor do programa.
 4. **Autoavaliação (IAA):** Viés positivo consistente (+2.7 pontos). Alunos superestimam seu desempenho.
@@ -60,10 +60,10 @@ A análise exploratória respondeu a 10 perguntas cruciais sobre o desenvolvimen
 ## 🤖 Modelagem Preditiva: Forecasting T→T+1 (Bloco 3)
 Desenvolvemos um modelo de **Forecasting Verdadeiro** (Random Forest) para prever o risco de um aluno cair para a classificação Quartzo (INDE < 5.506) no **ano seguinte**, com base nos indicadores do **ano atual**.
 
-- **Abordagem:** Treino com dados de 2020→2021, Teste com dados de 2021→2022. Isso elimina o *data leakage* e cria um Sistema de Alerta Precoce real.
-- **Features:** 28 variáveis (indicadores base + feature engineering avançado).
+- **Abordagem:** Treino com dados de 2020 a 2023, Teste com dados futuros não vistos de 2023→2024. Isso elimina o *data leakage* e cria um Sistema de Alerta Precoce real.
+- **Features:** 18 variáveis (indicadores base + feature engineering avançado).
 - **Otimizações:** SMOTE para balanceamento de classes e threshold otimizado para maximizar o Recall.
-- **Métricas (Teste):** AUC-ROC: 76.0% | Recall: 53.5% | Accuracy: 79.0%
+- **Métricas (Teste):** AUC-ROC: 63.5% | Recall: 58.3% | Accuracy: 69.1%
 - **Impacto:** Permite identificação precoce e intervenção proativa *antes* da queda no desempenho ocorrer.
 
 ## 💻 Aplicação Streamlit (Bloco 4)
