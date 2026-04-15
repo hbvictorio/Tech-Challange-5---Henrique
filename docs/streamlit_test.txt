@@ -1,5 +1,0 @@
-Streamlit app testado com sucesso.
-- Página Início: OK - header, boas-vindas, métricas, gráfico de pizza
-- Sidebar: OK - navegação, status do modelo
-- Layout acolhedor com gradientes e cards
-- Modelo carregado: AUC-ROC 1.000, F1 0.924
