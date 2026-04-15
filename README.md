@@ -1,19 +1,23 @@
-# Datathon Passos Mágicos - FIAP PosTech - Henrique Victorio
+# Datathon Passos Mágicos - FIAP PosTech - Henrique Barbosa Victorio
 
 Este repositório contém a solução completa para o desafio Datathon da Associação Passos Mágicos, desenvolvido como parte da pós-graduação FIAP PosTech.
 
+## 🌟 Acesse a Aplicação (Sistema de Alerta Precoce)
+A aplicação interativa desenvolvida para a equipe pedagógica da Passos Mágicos já está no ar! Você pode testar o modelo preditivo e explorar os dashboards através do link abaixo:
+
+👉 **[Acessar o Streamlit Cloud - Datathon Passos Mágicos](https://tech-challange-5---henrique-fpevhfzfqkeq4v9fu9iufg.streamlit.app/)**
+
+---
+
 ## 🎯 Objetivo do Projeto
 O objetivo deste projeto é analisar a base de dados do PEDE (Pesquisa Extensiva do Desenvolvimento Educacional) referente aos anos de 2020, 2021 e 2022, extrair insights acionáveis e desenvolver um modelo preditivo para identificar alunos em risco de defasagem educacional.
-
-A solução final inclui uma aplicação interativa em Streamlit para uso da equipe pedagógica da Passos Mágicos.
 
 ## 📁 Estrutura do Repositório (Bloco 1)
 
 ```text
 datathon_passos/
 ├── data/                   # Datasets originais e processados
-│   ├── dataset_limpo_long.csv  # Dados longitudinais limpos
-│   └── dataset_limpo_wide.csv  # Dados em formato wide limpos
+│   └── dataset_limpo_long.csv  # Dados longitudinais limpos
 ├── notebooks/              # Scripts de análise e modelagem
 │   ├── 01_eda_limpeza.py       # Limpeza e Análise Exploratória (EDA)
 │   └── 02_modelo_preditivo.py  # Feature Engineering e Modelagem (Forecasting)
@@ -73,7 +77,7 @@ A aplicação foi desenvolvida com foco na usabilidade pela equipe da Passos Má
 - **Apresentação Gerencial:** 12 slides focados em storytelling de dados, destacando o problema (defasagem), a solução (modelo de forecasting) e recomendações estratégicas.
 - **Roteiro de Vídeo:** Script detalhado para um pitch de 5 minutos, estruturado para engajar a diretoria e a banca avaliadora.
 
-## 🚀 Como Executar o Projeto
+## 🚀 Como Executar o Projeto Localmente
 
 ### Pré-requisitos
 ```bash
