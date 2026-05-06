@@ -73,10 +73,6 @@ A aplicação foi desenvolvida com foco na usabilidade pela equipe da Passos Má
 - **Análise Exploratória:** Dashboards interativos com a evolução dos indicadores.
 - **Deploy:** Configurada para deploy fácil no Streamlit Community Cloud (`requirements.txt` incluso).
 
-## 📈 Apresentação e Pitch (Bloco 5)
-- **Apresentação Gerencial:** 12 slides focados em storytelling de dados, destacando o problema (defasagem), a solução (modelo de forecasting) e recomendações estratégicas.
-- **Roteiro de Vídeo:** Script detalhado para um pitch de 5 minutos, estruturado para engajar a diretoria e a banca avaliadora.
-
 ## 🚀 Como Executar o Projeto Localmente
 
 ### Pré-requisitos
